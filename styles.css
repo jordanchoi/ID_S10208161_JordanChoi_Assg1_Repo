@@ -1,8 +1,22 @@
 /* Cascading Style Sheets for Jordan Choi - Portfolio V4.0 */
-
 /* General Styles - Apply to all viewports */
-
+body h1, h2, h3, h4, h5, h6 {
+    font-family: Montserrat, 'sans-serif';
+}
 
 /* Desktop & Tablet Styles via Media Query */
+@media (min-width: 481px) {
+    .logo {
+     width: 200px;
+     margin-left: auto;
+     margin-right: auto;
+     position: relative;
+    }
+}
 
 /* Mobile Styles via Media Query */
+
+/* Temp CSS for ease of edit */
+header {
+    border: 1px solid red;
+}
