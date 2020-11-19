@@ -4,13 +4,38 @@ body h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat, 'sans-serif';
 }
 
+/* Desktop Nav */
+#left-nav, #right-nav {
+    display: inline-block;
+}
+
+#left-nav li, #right-nav li {
+    display: inline-block;
+}
+
+#left-nav {
+    float: left;
+}
+#right-nav {
+    float: right;
+}
+
+nav ul {
+    list-style-type: none;
+    text-decoration: none;
+}
+}
 /* Desktop & Tablet Styles via Media Query */
-@media (min-width: 481px) {
+@media screen and (min-width: 481px) {
+
+    body {
+        padding: 25px;
+    }
+
     .logo {
-     width: 200px;
+     width: 150px;
      margin-left: auto;
      margin-right: auto;
-     position: relative;
     }
 }
 
