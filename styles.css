@@ -7,6 +7,9 @@ body h1, h2, h3, h4, h5, h6 {
 /* Desktop Nav */
 #left-nav, #right-nav {
     display: inline-block;
+    border: 1px solid green;
+    width: 40%;
+    line-height: 130px;
 }
 
 #left-nav li, #right-nav li {
@@ -15,31 +18,57 @@ body h1, h2, h3, h4, h5, h6 {
 
 #left-nav {
     float: left;
+    text-align: right;
 }
 #right-nav {
+    text-align: left;
     float: right;
 }
 
 nav ul {
     list-style-type: none;
-    text-decoration: none;
 }
+
+nav li a {
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 15px;
+    font-family: Source Sans Pro, 'sans-serif';
+    text-transform: uppercase;
+    color: #000;
+}
+
+#logo-container {
+    border: 1px solid red;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline;
+}
+
+.logo {
+    width: 150px;
+    border: 1px solid red;
+}
+
+
+header {
+    text-align: center;
+    padding: 15px;
 }
 /* Desktop & Tablet Styles via Media Query */
 @media screen and (min-width: 481px) {
-
     body {
         padding: 25px;
     }
 
-    .logo {
-     width: 150px;
-     margin-left: auto;
-     margin-right: auto;
-    }
 }
 
 /* Mobile Styles via Media Query */
+@media screen and (max-width: 480px) {
+    nav {
+        visibility: hidden;
+    }
+}
 
 /* Temp CSS for ease of edit */
 header {
