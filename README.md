@@ -4,4 +4,4 @@ The official web portfolio of Jordan Choi - Year 1 Information Technology Studen
 
 This portfolio consists of my basic profile and information, past projects, education history and achievements, skills & proficiency, work experiences and lastly a contact component.
 
-##Design Process & Rationale
+## Design Process & Rationale
