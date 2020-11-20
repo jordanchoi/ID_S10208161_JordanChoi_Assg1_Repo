@@ -27,7 +27,6 @@ footer p {
 /* For ease of access and re-use */
 .full {
     width: 100vw;
-    height: 100vh;
 }
 
 .flex {
@@ -35,9 +34,8 @@ footer p {
 }
 
 .overlay {
-    background-color: rgba(255,255,255,0.25);
+    background-color: rgba(255,255,255,0.6);
     width: 100vw;
-    height: 100vh;
 }
 
 /* First Section - Profile, with header & nav */
@@ -46,9 +44,7 @@ header {
     padding-top: 10px;
 }
 
-header img {
-    max-width: 130px;
-}
+
 
 .profile {
     background: url("images/profile-bg-resized-vectorpouchfreepik.jpg") no-repeat fixed center;
@@ -127,15 +123,29 @@ header img {
     align-content: center;
     align-items: center;
     text-align: center;
+    padding: 0px 120px 0px 120px;
+}
+
+.edu-content div{
+    width: 24%;
 }
 
 .edu-content img {
-    width: 250px;
+    width: 100%;
+    max-width: 130px;
+    height: auto;
 }
 
-.edu-content aside {
-    justify-content: space-between;
+
+.achievements {
+    justify-content: space-around;
     display: flex;
+    text-align: center;
+    padding: 40px 80px 0px 80px;
+}
+
+.achievements h4 {
+    font-size: 14px;
 }
 
 
@@ -149,6 +159,7 @@ header img {
 
     header img {
         margin-left: 100px;
+        width: 130px;
     }
 
     .dp {
@@ -189,7 +200,7 @@ header img {
         font-family: Montserrat, 'sans-serif';
         font-weight: 600;
         text-transform: uppercase;
-        color: #fff;
+        color: #000;
         display: inline-block;
     }
 
@@ -209,19 +220,23 @@ header img {
     header {
         justify-content: center;
     }
-
+    header img {
+        width: 100px;
+    }
     .content {
         flex-flow: column wrap;
         justify-content: center;
-        align-items:center ;
+        align-items:center;
     }
 
     .dp {
-        position: absolute;
+        position: relative;
         display: flex;
         width: 130px;
-        right: -20px;
-        top: -60px;
+        /* right: -20px;
+        top: -60px; */
+        margin: 0 auto;
+        top: 0;
     }
 
     .biography {
@@ -243,7 +258,7 @@ header img {
     /* Section 2 - Projects */
     h2 {
         margin-top: 20px;
-        padding: 50px 0px 0px 60px;
+        padding: 40px 0px 0px 40px;
     }
     .projectwork {
         width: 46%;
