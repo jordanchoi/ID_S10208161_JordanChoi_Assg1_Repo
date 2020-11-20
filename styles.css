@@ -1,54 +1,107 @@
 /* Cascading Style Sheets for Jordan Choi - Portfolio V4.0 */
 /* General Styles - Apply to all viewports */
 body {
-    background-color: grey;
+    background-color: black;
     color: #fff;
     overflow-x: hidden;
 }
 
-header {
-    display: flex;
-    border: 1px solid white;
-}
-
-header img {
-    display: flex;
-    width: 150px;
-    height: 150px;
-    flex-shrink: 3;
-    max-width: 150px;
-}
-
-nav {
-    width: 100%;
-    height: auto;
-    min-width: 480px;
-    justify-content: flex-end;
-    align-items: center;
-    display: flex;
-    flex-shrink: 1;
-    border: 1px solid blue;
-}
-
-
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat, 'sans-serif';
+    font-weight: 600;
 }
 
 p {
-    font-family: Source Sans Pro, 'sans-serif';
+    font-family:  Maven Pro, Source Sans Pro, 'sans-serif';
+    font-size: 14px;
+}
+
+/* For ease of access and re-use */
+.full {
+    width: 100vw;
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+}
+
+.overlay {
+    background-color: rgba(255,255,255,0.25);
+    width: 100vw;
+    height: 100vh;
+}
+
+/* First Section - Profile, with header & nav */
+header {
+    display: flex;
+    padding-top: 10px;
 }
 
 .profile {
     background: white url("images/profile-bg-resized-vectorpouchfreepik.jpg") no-repeat fixed center;
     background-size: cover;
-    max-width: 100vw;
-    width: 100vw;
-    height: 100vh;
+}
+
+article.content {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    border: 1px solid green;
+}
+
+.biography {
+    width: 45%;
+    background-color: rgba(255,255,255,0.8);
+    color: black;
+    padding: 25px 25px 25px 130px;
+    margin: 0 auto;
+    filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, 0.61));
+}
+
+.content ul {
+    list-style-type: none;
+    border: 1px solid purple;
+}
+
+.social-media img {
+    width: 45px;
+    justify-self: 
+}
+
+
+.dp {
+    align-self: center;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+    left: -100px;
+    top: 100px;
+    width: 25%;
+    flex-shrink: 5;
+    min-width: 175px;
+}
+
+/* Desktop Styles via Media Query */
+@media only screen and (min-width: 769px) {
+
+}
+header img {
+    display: flex;
+    flex-shrink: 3;
+    max-width: 130px;
+    justify-content: center;
+    margin-left: 80px;
+}
+
+nav {
+    width: 100%;
+    margin-right: 50px;
+    min-width: 480px;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    flex-shrink: 1;
+    z-index: 2;
 }
 
 nav ul {
@@ -65,7 +118,7 @@ nav li a {
     margin: 0px 10px;
     font-size: 14px;
     font-family: Montserrat, 'sans-serif';
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     color: #fff;
     display: inline-block;
@@ -75,25 +128,9 @@ nav li a {
 .logo {
     width: 150px;
     height: 100%;
-    margin-left: 50px;
 }
 
-.dp {
-    position: absolute;
-    display: flex;
-    bottom: 10
-}
 
-.biography {
-    width: 50%;
-    background-color: #ededed;
-    color: black;
-    padding: 25px 25px 25px 210px;
-    border: 1px solid black;
-    justify-content: center;
-    display: inline-block;
-    margin: 0 auto;
-}
 
 
 /* Tablet Styles via Media Query */
@@ -105,6 +142,10 @@ nav li a {
     header {
         justify-content: center;
     }
+
+    header img {
+        margin-left: 0px;
+    }
 }
 
 
@@ -114,12 +155,4 @@ nav li a {
         display: none;
     }
     
-    body p {
-        color: red;
-    }
-}
-
-/* Temp CSS for ease of edit */
-header {
-    border: 1px solid red;
 }
