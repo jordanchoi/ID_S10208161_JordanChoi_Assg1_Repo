@@ -38,8 +38,12 @@ header {
     padding-top: 10px;
 }
 
+header img {
+    max-width: 130px;
+}
+
 .profile {
-    background: white url("images/profile-bg-resized-vectorpouchfreepik.jpg") no-repeat fixed center;
+    background: url("images/profile-bg-resized-vectorpouchfreepik.jpg") no-repeat fixed center;
     background-size: cover;
 }
 
@@ -48,79 +52,84 @@ header {
 }
 
 .dp {
-    align-self: center;
     position: absolute;
-    left: -100px;
-    top: 100px;
-    width: 25%;
-    min-width: 175px;
 }
 
 .biography {
     width: 45%;
     background-color: rgba(255,255,255,0.8);
     color: black;
-    padding: 25px 25px 25px 120px;
+    padding: 25px 45px 25px 120px;
     filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, 0.61));
 }
 
 .content ul {
     list-style-type: none;
+    display: flex;
     align-self: center;
 }
 
 .content ul li {
-    margin: 10px auto;
+    margin: 8px 0px;
 }
 
 .social-media img {
-    width: 45px;
-
+    width: 40px;
 }
 
 /* Desktop Styles via Media Query */
 @media only screen and (min-width: 769px) {
     .content {
-        padding-top: 50px;
+        padding-top: 70px;
         display: flex;
         flex-flow: row wrap;
     }
-}
-header img {
-    display: flex;
-    max-width: 130px;
-    margin-left: 100px;
-}
 
-nav {
-    width: 100%;
-    margin-right: 50px;
-    min-width: 480px;
-    justify-content: flex-end;
-    align-items: center;
-    display: flex;
-    flex-shrink: 1;
-    z-index: 2;
-}
+    header img {
+        margin-left: 100px;
+    }
 
-nav ul {
-    list-style-type: none;
-    display: inline-block;
-}
+    .dp {
+        left: -100px;
+        top: 100px;
+        width: 25%;
+        min-width: 175px;
+    }
 
-nav ul li {
-    display: inline-block;
-}
-
-nav li a {
-    text-decoration: none;
-    margin: 0px 10px;
-    font-size: 14px;
-    font-family: Montserrat, 'sans-serif';
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #fff;
-    display: inline-block;
+    .content ul {
+        flex-flow: column wrap;
+    }
+    
+    nav {
+        width: 100%;
+        margin-right: 50px;
+        min-width: 480px;
+        justify-content: flex-end;
+        align-items: center;
+        display: flex;
+        flex-shrink: 1;
+        z-index: 2;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        display: inline-block;
+    }
+    
+    nav ul li {
+        display: inline-block;
+    }
+    
+    nav li a {
+        text-decoration: none;
+        margin: 0px 10px;
+        font-size: 14px;
+        font-family: Montserrat, 'sans-serif';
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+    }
 }
 
 /* Tablet Styles via Media Query */
@@ -133,8 +142,16 @@ nav li a {
         justify-content: center;
     }
 
-    header img {
-        margin-left: 0px;
+    .content {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    .biography {
+        width: 80%;
+        justify-self: center;
+        padding: 20px;
+        margin: 0 auto;
     }
 }
 
