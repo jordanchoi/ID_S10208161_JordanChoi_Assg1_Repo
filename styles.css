@@ -15,6 +15,14 @@ p {
     font-family:  Maven Pro, Source Sans Pro, 'sans-serif';
     font-size: 14px;
 }
+footer {
+    height: 60px;
+    background-color: #08003E
+}
+footer p {
+    text-align: center;
+    line-height: 60px;
+}
 
 /* For ease of access and re-use */
 .full {
@@ -107,6 +115,30 @@ header img {
     width: 100%;
 }
 
+/* Third Section - Education & Achievements */
+.education {
+    background: url("images/education-bg-resized-pikisuperstar-freepik.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.edu-content {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.edu-content img {
+    width: 250px;
+}
+
+.edu-content aside {
+    justify-content: space-between;
+    display: flex;
+}
+
+
 /* Desktop Styles via Media Query */
 @media only screen and (min-width: 769px) {
     .content {
@@ -162,7 +194,7 @@ header img {
     }
 
     /* Section 2 - Projects */
-    .projects h2 {
+    h2 {
         margin-top: 50px;
         padding: 50px 25px 30px 70px;
     }
@@ -209,7 +241,7 @@ header img {
     }
 
     /* Section 2 - Projects */
-    .projects h2 {
+    h2 {
         margin-top: 20px;
         padding: 50px 0px 0px 60px;
     }
