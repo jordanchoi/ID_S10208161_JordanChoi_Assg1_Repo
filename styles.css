@@ -83,6 +83,30 @@ header img {
     background-size: cover;
 }
 
+.project-content {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.projectwork {
+    width: 23%;
+    max-height: 350px;
+    margin: 5px;
+    background-color: rgba(255,255,255, 0.61);
+    text-align: center;
+    color: black;
+}
+
+.projectwork h3 {
+    font-size: 14px;
+}
+.projectwork img {
+    width: 100%;
+}
+
 /* Desktop Styles via Media Query */
 @media only screen and (min-width: 769px) {
     .content {
@@ -136,6 +160,12 @@ header img {
         color: #fff;
         display: inline-block;
     }
+
+    /* Section 2 - Projects */
+    .projects h2 {
+        margin-top: 50px;
+        padding: 50px 25px 30px 70px;
+    }
 }
 
 /* Tablet & Mobile Styles via Media Query */
@@ -176,5 +206,18 @@ header img {
     }
     .content ul li {
         margin: 0px 8px;
+    }
+
+    /* Section 2 - Projects */
+    .projects h2 {
+        margin-top: 20px;
+        padding: 50px 0px 0px 60px;
+    }
+    .projectwork {
+        width: 46%;
+    }
+
+    .project-content {
+        padding: 15px 50px 0px 50px;
     }
 }
