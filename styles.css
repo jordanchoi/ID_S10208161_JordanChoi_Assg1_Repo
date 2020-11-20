@@ -77,6 +77,12 @@ header img {
     width: 40px;
 }
 
+/* Second Section - Projects */
+.projects {
+    background: url("images/projects-bg-wirestock-freepik.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
 /* Desktop Styles via Media Query */
 @media only screen and (min-width: 769px) {
     .content {
@@ -132,7 +138,7 @@ header img {
     }
 }
 
-/* Tablet Styles via Media Query */
+/* Tablet & Mobile Styles via Media Query */
 @media only screen and (max-width: 768px) {
     nav {
         display: none;
@@ -145,21 +151,30 @@ header img {
     .content {
         flex-flow: column wrap;
         justify-content: center;
+        align-items: ;
+    }
+
+    .dp {
+        position: absolute;
+        display: flex;
+        width: 130px;
+        right: -20px;
+        top: -60px;
     }
 
     .biography {
         width: 80%;
         justify-self: center;
         padding: 20px;
-        margin: 0 auto;
+        margin: 45px auto 5px auto;
+        text-align: center;
     }
-}
 
-
-/* Mobile Styles via Media Query */
-@media only screen and (max-width: 480px) {
-    nav {
-        display: none;
+    .content ul {
+        justify-content: center;
+        padding-left: 0px;
     }
-    
+    .content ul li {
+        margin: 0px 8px;
+    }
 }
