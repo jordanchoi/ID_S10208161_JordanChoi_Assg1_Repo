@@ -14,11 +14,6 @@
     width: 100vw;
 }
 
-h2 {
-    margin-top: 50px;
-    padding: 50px 25px 30px 70px;
-}
-
 /* General Styles - Apply to all viewports */
 body {
     background-color: white;
@@ -34,6 +29,11 @@ h1, h2, h3, h4, h5, h6 {
 p {
     font-family:  Maven Pro, Source Sans Pro, 'sans-serif';
     font-size: 14px;
+}
+
+h2 {
+    margin-top: 70px;
+    padding: 0px 25px 30px 70px;
 }
 
 footer {
@@ -53,8 +53,6 @@ header {
     display: flex;
     padding-top: 10px;
 }
-
-
 
 .profile {
     background: url("images/profile-bg-resized-vectorpouchfreepik.jpg") no-repeat fixed center;
@@ -108,11 +106,14 @@ header {
 
 .projectwork {
     width: 23%;
-    max-height: 350px;
-    margin: 5px;
+    max-height: 320px;
+    min-height: 320px;
+    max-width: 320px;
+    margin: 5px auto;
     background-color: rgba(255,255,255, 0.61);
     text-align: center;
     color: black;
+    padding: 5px;
 }
 
 .projectwork h3 {
@@ -129,21 +130,24 @@ header {
 }
 
 .edu-content {
+    margin-left: 20px;
+    margin-right: 20px;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-content: center;
     align-items: center;
     text-align: center;
-    padding: 0px 120px 0px 120px;
+    border: 1px solid red;  
 }
 
 .edu-content div{
     width: 24%;
+    border: 1px solid red;
 }
 
 .edu-content img {
-    width: 100%;
-    max-width: 130px;
+    width: 100px;
+    max-width: 100%;
     height: auto;
 }
 
@@ -158,10 +162,6 @@ header {
 .achievements h4 {
     font-size: 14px;
 }
-
-
-
-
 
 
 /* Desktop Styles via Media Query */
@@ -230,17 +230,20 @@ header {
     .projects {
         height: 100vh;
     }
+
+    /* Section 3 - Education & Achievements */
+
+    .education {
+        height: 100vh;
+    }
 }
-
-
-
-
-
-
 
 
 /* Tablet & Mobile Styles via Media Query */
 @media only screen and (max-width: 768px) {
+    h2 {
+        font-size: 16px;
+    }
     nav {
         display: none;
     }
@@ -298,13 +301,48 @@ header {
         padding: 40px 0px 0px 40px;
     }
     .projects {
-        height: 100vh;
+        height: 100%;
     }
     .projectwork {
         width: 46%;
     }
 
     .project-content {
-        padding: 15px 50px 50px 50px;
+        padding: 15px 10px 50px 10px;
     }
+
+    /* Third Section - Education & Achievements */
+    .edu-content {
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .edu-content div{
+        width: 100%;
+    }
+
+    .edu-content img {
+        width: 100%;
+        max-width: 130px;
+        height: auto;
+    }
+
+
+    .achievements {
+        justify-content: space-around;
+        display: flex;
+        text-align: center;
+    }
+
+    .achievements div {
+        width: 100%;
+    }
+
+    .achievements h4 {
+        font-size: 14px;
+    }
+
 }
