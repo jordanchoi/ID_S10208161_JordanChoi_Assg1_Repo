@@ -141,7 +141,7 @@ header {
 }
 
 .edu-content div{
-    width: 24%;
+    width: 24.5%;
     border: 1px solid red;
 }
 
@@ -151,12 +151,17 @@ header {
     height: auto;
 }
 
-
 .achievements {
     justify-content: space-around;
     display: flex;
     text-align: center;
-    padding: 40px 80px 0px 80px;
+    margin: 50px;
+}
+
+.achievements div {
+    margin: 10px;
+    width: 100%;
+    border: 1px solid purple;
 }
 
 .achievements h4 {
@@ -314,7 +319,7 @@ header {
     /* Third Section - Education & Achievements */
     .edu-content {
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-content: center;
         align-items: center;
         text-align: center;
@@ -330,9 +335,9 @@ header {
         height: auto;
     }
 
-
     .achievements {
         justify-content: space-around;
+        flex-flow: row wrap;
         display: flex;
         text-align: center;
     }
