@@ -213,7 +213,7 @@ header img {
     .content {
         flex-flow: column wrap;
         justify-content: center;
-        align-items: ;
+        align-items:center ;
     }
 
     .dp {
