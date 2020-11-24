@@ -29,6 +29,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat, 'sans-serif';
     font-weight: 600;
+    color: black;
 }
 
 p {
@@ -39,6 +40,7 @@ p {
 h2 {
     margin-top: 70px;
     padding: 0px 25px 30px 70px;
+    color: white;
 }
 
 footer {
@@ -50,6 +52,7 @@ footer {
 footer p {
     text-align: center;
     line-height: 60px;
+    margin-block-start: 0px;
 }
 
 .scroll-to-top {
@@ -73,6 +76,8 @@ footer p {
     width: 50px;
     height: 50px;
     display: block;
+    text-decoration: none;
+    font-size: 35px;
 }
 /* First Section - Profile, with header & nav */
 header {
@@ -153,8 +158,13 @@ header {
 
 /* Third Section - Education & Achievements */
 .education {
-    background: url("images/education-bg-resized-pikisuperstar-freepik.jpg") no-repeat fixed center;
+    background: url("images/2620726.jpg") no-repeat fixed center;
     background-size: cover;
+    color: white;
+}
+
+.education h4 {
+    color: white;
 }
 
 .edu-content {
@@ -196,6 +206,8 @@ header {
 /* Forth Section - Skills */
 .skills-section {
     height: 100vh;
+    background: url("images/3417630.jpg") no-repeat fixed center;
+    background-size: cover;
 }
 
 .skills-content {
@@ -203,6 +215,7 @@ header {
     margin-left: 40px;
     margin-right: 40px;
     padding-bottom: 30px;
+    color: white;
 }
 
 .left, .right {
@@ -213,12 +226,16 @@ header {
     width: 100%;
     background-color: #bdbdbd;
     flex-flow: row wrap;
+    border-radius: 2px;
 }
 
 .skills {
     padding: 0px 10px;
     text-align: right;
-    color: white;
+    /* color: white; */
+    font-family: Source Sans Pro, 'sans-serif';
+    font-size: 12px;
+    border-radius: 2px;
 }
 
 .html {
@@ -234,6 +251,12 @@ header {
 .js {
     width: 45%;
     background-color: yellow;
+    color: black;
+}
+
+.php {
+    width: 25%;
+    background-color: pink;
     color: black;
 }
 
