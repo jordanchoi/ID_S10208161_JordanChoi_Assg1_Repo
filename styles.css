@@ -172,7 +172,6 @@ header {
     margin-right: 20px;
     flex-flow: row wrap;
     justify-content: space-around;
-    align-content: center;
     align-items: center;
     text-align: center;
 }
@@ -210,23 +209,23 @@ header {
     background-size: cover;
 }
 
-.skills-content {
-    justify-content: space-around;
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-bottom: 30px;
-    color: white;
-}
-
-.left, .right {
-    width: 45%;
-}
-
 .box {
     width: 100%;
     background-color: #bdbdbd;
     flex-flow: row wrap;
     border-radius: 2px;
+}
+
+.skills-content {
+    justify-content: space-around;
+    margin: 40px;
+    color: white;
+    height: 350px;
+    align-items: center;
+}
+
+.left, .right {
+    width: 45%;
 }
 
 .skills {
@@ -258,6 +257,26 @@ header {
     width: 25%;
     background-color: pink;
     color: black;
+}
+
+.jquery {
+    width: 25%;
+    background-color: green;
+}
+
+.python {
+    width: 55%;
+    background-color: darkblue;
+}
+
+.csharp {
+    width: 25%;
+    background-color: purple;
+}
+
+.adobe {
+    width: 70%;
+    background-color: maroon;
 }
 
 
@@ -452,6 +471,15 @@ header {
 
     .achievements h4 {
         font-size: 14px;
+    }
+
+    /* Forth Section - Skills */
+
+    .skills-content {
+        flex-flow: row wrap;
+    }
+    .left, .right {
+        width: 100%;
     }
 
 }
