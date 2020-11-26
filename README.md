@@ -5,6 +5,16 @@ The official web portfolio of Jordan Choi - Year 1 Information Technology Studen
 This portfolio consists of my basic profile and information, past projects, education history and achievements, skills & proficiency, work experiences and lastly a contact component.
 
 ## Design Process & Rationale
+This website is created to become my portfolio that contains information about myself that my future employers or companies/individuals seeking freelancers may be interested in.
+
+Thus, this website is designed for them to learn more about me based on my biography, education history and past employments, identify my skills which they may require, and to contact me for potential projects or employment.
+
+Putting myself in the perspective of the group mentioned earlier, this website should:
+
+
+
+
+
 Wireframe: https://xd.adobe.com/view/8ab309e9-5d98-43b9-a162-07fcddb4811c-dfe0/
 
 *More to be added*
