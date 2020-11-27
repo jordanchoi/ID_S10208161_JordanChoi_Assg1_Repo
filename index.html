@@ -7,24 +7,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="author" content="Jordan Choi"/>
         <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="styles.css"> <!--what the hell is going on-->
+        <link rel="stylesheet" href="styles.css">
         <link rel="icon" href="images/jc-orig.png"/>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Allura&family=Expletus+Sans:wght@700&family=Maven+Pro:wght@400;500;700&family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
-        <!-- <script>
-            var menuStatus = false;
-            function() toggleMenu() {
-                if (!(menustatus)) {
-                    menuStatus = true;
-
-                }
-            }
-        </script> -->
-
     </head>
     <body>
-        <section class="flex profile full" id="top">
-            <div class="overlay">
+        <section class="profile" id="top">
                 <header class="flex">
                     <a href="#top" target="_self"><img src="images/jc-150-inverted.png" alt="Jordan Choi"/></a>
                     <nav>
@@ -37,19 +26,18 @@
                             <li><a href="#contact" target="_self">Contact</a></li>
                         </ul>
                     </nav>
-                    <button><img src="images/icons/hamburger.png" alt="Menu" id="hamburger"/></button>
                 </header>
                 <article class="flex content">
                     <div class="biography">
                         <img src="images/jordan-dp.png" alt="Jordan Choi" class="dp"/>
-                        <h1 id="name">Jordan Choi</h1>
+                        <h1 id="name"><span class="gold">Jordan</span> Choi</h1>
                             <p>Hey there,<br/><br/>
                             I am currently pursuing a Diploma in Information Technology at Ngee Ann Polytechnic, a college located in Singapore. Prior to this, I studied Web Applications for 2 years in the Institute of Technical Education.<br/><br/>
                             I developed passion and interests in Information Technology, especially in the field of programming and web development, ever since I was exposed to it about 13 years ago when I was 10.<br/><br/>
                             I am also accepting freelance projects on WordPress website design and development to broaden, gain experience and to build up my portfolio. If you require such service and do not mind my lack of experience, feel free to contact me.</p>
-                        <span style="font-family: Allura, 'sans-serif'; font-size: 34px; float: right;">JordanChoi</span>  
+                        <span style="font-family: Allura, 'sans-serif'; font-size: 34px; float: right;" class="gold">JordanChoi</span>  
                     </div>
-                    <ul class="social-media">
+                    <ul class="social-media flex">
                         <li><a href="https://www.facebook.com/" target="_blank"><img src="images/icons/svg/facebook.svg" alt="Facebook" title="Facebook"/></a></li>
                         <li><a href="https://www.instagram.com/jcsy11" target="_blank"><img src="images/icons/svg/instagram.svg" alt="Instagram" title="Instagram"/></a></li>
                         <li><a href="https://www.linkedin.com/in/jordanchoi/" target="_blank"><img src="images/icons/svg/linkedin.svg" alt="LinkedIn" title="LinkedIn"/></a></li>
@@ -57,10 +45,8 @@
                         <li><a href="https://www.whatsapp.com/" target=_blank"><img src="images/icons/svg/whatsapp.svg" alt="WhatsApp" title="WhatsApp"/></a></li>
                     </ul>
                 </article>
-            </div>
         </section>
-        <section class="flex projects full" id="projects">
-            <div class="overlay">
+        <section class="projects" id="projects">
                 <h2 class="section-title">Past Projects</h2> 
                 <article class="flex project-content">
                     <div class="projectwork">
@@ -83,10 +69,8 @@
                         <p><em>School Graphical Design Project</em></p>
                     </div>
                 </article>
-            </div>
         </section>
-        <section class="flex education full" id="education-achievements">
-            <div class="overlay">
+        <section class="education" id="education-achievements">
                 <h2 class="section-title">Education & Achievements</h2> 
                 <article class="flex edu-content">
                     <div class="institute">
@@ -142,10 +126,8 @@
                             2017</p>
                     </div>
                 </aside>
-            </div>
         </section>
-        <section class="flex skills-section full" id="skills">
-            <div class="overlay">
+        <section class="skills-section" id="skills">
                 <h2>Skills & Proficiency</h2>
                 <article class="skills-content flex">
                     <div class="left">
@@ -185,10 +167,8 @@
                             </div>
                     </div>
                 </article>
-            </div>
         </section>
-        <section class="flex works full" id="work">
-            <div class="overlay">
+        <section class="works" id="work">
                 <h2>Past Employments</h2>
                 <article class="flex work-contents">
                     <div>
@@ -248,12 +228,9 @@
                         </ul>
                     </div>
                 </article>
-            </div>
         </section>
-        <section class="flex contact full" id="contact">
-            <div class="overlay">
-                <h2>Contact</h2>
-                <article class="contact-content">
+        <section class="contact" id="contact">
+                <article class="flex contact-content">
                     <div class="form-container">
                         <form action="mailto:jcsy11@hotmail.com" name="contactform" method="post" id="contactform">
                                 <input type="text" name="formname" id="formname" size="30" maxlength="30" placeholder="Name" required pattern="([^\s][A-Za-z\s]+$)" title="Name must not start with a space, and inputted in either lower or uppercase alphabets, with spaces in between. Numbers and special characters are not allowed."/>
@@ -265,8 +242,8 @@
                                 <input type="reset" name="reset" value="Reset" id="reset"/>		
                         </form>
                     </div>
-                    <div class="content-container">
-                        <h3>Say Hey!</h3>
+                    <div class="content-container flex">
+                        <h3 class="gold">Say Hey!</h3>
                         <div class="contact-element"><img src="images/icons/phone-contact.png" alt="Phone"/><p class="contact-info"> +65 1234 5678</p></div>
                         <div class="contact-element"><img src="images/icons/email.png" alt="Email"/><a href="mailto:s10208161@connect.np.edu.sg" target="_blank">s10208161@connect.np.edu.sg</a></div>
                         <div class="contact-element"><img src="images/icons/address.png" alt="Address"/><p class="contact-info">535 Clementi Rd, Singapore 599489</p></div>
@@ -279,7 +256,6 @@
                             </ul>
                     </div>
                 </article>
-            </div>
         </section>
         <div class="scroll-to-top">
             <a href="#top" target="_self" id="back-to-top"><img src="images/top.png" alt="^" width="28"/></a>

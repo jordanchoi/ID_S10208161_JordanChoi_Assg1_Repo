@@ -1,32 +1,34 @@
-/* Revamped Cascading Style Sheet for Jordan Choi Portfolio V4.0 */
-/* Generic CSS to apply to ALL styles */
+/* Cascading Style Sheets for Jordan Choi - Portfolio V4.0 */
+/* For testings */
+.gold {
+    color: gold;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Transferred */
+
 * {
     scroll-behavior: smooth;
     font-family: Maven Pro, Source Sans Pro, 'sans-serif';
 }
 
-.gold {
-    color: gold;
-}
-
 body {
-    color: #000000;
+    /* color: #fff; */
     overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Montserrat, 'sans-serif';
     font-weight: 600;
+    color: black;
     letter-spacing: 2px;
 }
 
 p {
-    font-size: 14px;
-    color: #fff;
-}
-
-.biography p, .projectwork p, .work-contents p {
-    color: black;
+    font-size: 14px; 
 }
 
 h2 {
@@ -46,6 +48,7 @@ footer p {
     margin-block-start: 0px;
     line-height: 60px;
 }
+
 .scroll-to-top {
     position: fixed;
     bottom: 65px;
@@ -78,45 +81,55 @@ header {
     padding-top: 10px;
 }
 
-/* Background of Sections */
-
 .profile {
     background: url("images/profile-bg.jpg") no-repeat fixed center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .projects {
     background: url("images/project-bg.jpg") no-repeat fixed center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .education {
     background: url("images/edu-bg.jpg") no-repeat fixed center;
+    background-size: cover;
     color: white;
+    min-height: 100vh;
 }
 
 .skills-section {
     background: url("images/skills-bg.jpg") no-repeat fixed center;
-
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .works {
     background: url("images/work-bg.jpg") no-repeat fixed center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .contact {
     background: url("images/contact-bg.jpg") no-repeat fixed center;
+    background-size: cover;
+    min-height: 100vh;
 }
 
-.profile, .projects, .education, .skills-section, .works, .contact {
-    min-height: 100vh;
-    background-size: cover;
+.content {
+    justify-content: center;
+    padding-top: 70px;
+    display: flex;
+    flex-flow: row wrap;
 }
-/* Profile Section */
+
 .dp {
     position: absolute;
     left: -110px;
     top: 100px;
-    width: 25%;
-    max-width: 150px;
+    width: 25%;  
 }
 
 .biography {
@@ -128,6 +141,7 @@ header {
     padding: 25px 45px 25px 120px;
     filter: drop-shadow(10px 10px 2px rgba(0, 0, 0, 0.61));
 }
+
 .content ul {
     list-style-type: none;
     align-self: center;
@@ -170,7 +184,6 @@ header {
     width: 100%;
 }
 
-/* Education Section */
 .education h4 {
     color: white;
 }
@@ -178,8 +191,7 @@ header {
 .edu-content {
     flex-flow: row wrap;
     text-align: center;
-    padding: 4vw 5vw 5vw 5vw;
-    justify-content: center;
+    padding: 4vw 5vw 5vw 5vw
 }
 
 .institute {
@@ -197,7 +209,6 @@ header {
     text-align: center;
     margin-top: 20px;
     padding: 0vw 5vw 5vw 5vw;
-    justify-content: center;
 }
 
 .achievements div {
@@ -208,7 +219,6 @@ header {
     font-size: 14px;
 }
 
-/* Skills Section */
 .skills-content {
     color: white;
     padding: 5vw 5vw 5vw 5vw;
@@ -272,7 +282,6 @@ header {
     background-color: #F4C547;
 }
 
-/* Works Section */
 
 .work-contents {
     padding: 4vw 5vw 5vw 5vw;
@@ -457,195 +466,12 @@ nav li a:hover {
 
 header img {
     margin-left: 100px;
-    max-width: 130px;
+    width: 140px;
 }
 
 .content ul {
     flex-flow: column wrap;
 }
 
-/* For ease of reuse */
-.flex {
-    display: flex;
-}
-
-.content {
-    justify-content: center;
-    padding-top: 70px;
-    display: flex;
-    flex-flow: row wrap;
-}
-
-/* Mobile */
-@media only screen and (max-width: 768px) {
-    h2 {
-        font-size: 20px;
-        padding: 15%;
-    }
-
-    .scroll-to-top, nav {
-        display: none;
-    }
-
-    header {
-        justify-content: center;
-    }
-    header img {
-        width: 100px;
-        margin: 0;
-    }
-    .content {
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items:center;
-    }
-
-    .biography h1 {
-        margin-top: -40px;
-    }
-
-    .dp {
-        position: relative;
-        display: flex;
-        text-align: center;
-        max-width: 150px;
-        width: 100%;
-        height: auto;
-        margin: 0 auto;
-        top: -50px;
-        left: 0;
-    }
-
-    .content ul {
-        justify-content: center;
-        padding-left: 0px;
-        flex-flow: row wrap;
-    }
-    .content ul li {
-        margin: 10px 8px;
-    }
-
-    /* Section 1 - Profile */
-    .biography {
-        width: 80%;
-        padding: 20px;
-        text-align: center;
-    }
-
-    /* Section 2 - Projects */
-
-    .projectwork {
-        width: 46%;
-    }
-
-    /* .project-content {
-        padding: 15px 10px 50px 10px;
-    } */
-
-    /* Third Section - Education & Achievements */
-    .edu-content {
-        flex-flow: row wrap;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .edu-content div{
-        width: 100%;
-    }
-
-    .edu-content img {
-        width: 100%;
-        max-width: 130px;
-        height: auto;
-    }
-
-    .achievements {
-        justify-content: center;
-        flex-flow: row wrap;
-        display: flex;
-        text-align: center;
-    }
-
-    .achievements div {
-        width: 100%;
-    }
-
-    .achievements h4 {
-        font-size: 14px;
-    }
-
-    /* Forth Section - Skills */
-
-    .skills-content {
-        flex-flow: row wrap;
-    }
-
-    .left, .right {
-        width: 100%;
-        margin: 0px;
-    }
-
-    /* Fifth Section - Works */
-    .works {
-        height: 100%;
-    }
-    
-    .work-contents {
-        flex-flow: row wrap;
-        justify-content: space-around;
-        margin: 0px;
-    }
-
-    .work-contents div {
-        width: 60%;
-        padding: 40px;
-        height: 100%;
-        margin: 10px;
-    }
-
-    /* Last Section - Contact */
-    .contact {
-        height: 100%;
-    }
-
-    .contact-content {
-        flex-flow: column-reverse wrap;
-        justify-content: space-around;
-        margin: 0px;
-        padding: 40px;
-    }
-
-    .form-container, .content-container {
-        width: 100%;
-        background-color: rgba(0,0,0,0);
-    }
-
-    .form-container form {
-        width: 100%;
-        left: 0px;
-        top: 40px;
-    }
-
-    .content-container ul {
-        padding-inline-start: 2px;
-        width: 100%;
-    }
-
-    .content-container ul > li {
-        margin: 0px;
-    }
-
-    .content-container .social-media img
-    {
-        width: 32px;
-        margin: 2px;
-    }
-}
-
-@media only screen and (max-width: 277px) {
-    .projectwork {
-        width: 100%;
-    }
-}
+/* ---------------------------------------*/
+/* Tablet & Mobile Styles via Media Query */
