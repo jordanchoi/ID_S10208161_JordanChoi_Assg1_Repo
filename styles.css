@@ -1,5 +1,58 @@
 /* Revamped Cascading Style Sheet for Jordan Choi Portfolio V4.0 */
 /* Generic CSS to apply to ALL styles */
+
+/* Mobile Menu */
+#mobile-menu {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 32px;
+    display: none;
+}
+
+#mobile-menu img {
+    width: 32px;
+}
+
+.overlay {
+    position: fixed;
+    z-index: 5;
+    right: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+.overlay-menu {
+    position: relative;
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    top: 30%;
+}
+
+.overlay a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:focus, .overlay a:hover {
+    color: #f1f1f1;
+}
+
+.overlay .toggleCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 2px;
+    font-size: 20px;
+}
+
 * {
     scroll-behavior: smooth;
     font-family: Maven Pro, Source Sans Pro, 'sans-serif';
@@ -389,8 +442,7 @@ textarea {
 .content-container ul li {
     display: flex;
     text-align: left;
-    margin: 10px;  
-    position: 
+    margin: 10px;
 }
 
 .contact-element a {
@@ -478,9 +530,12 @@ header img {
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
+    #mobile-menu {
+        display: block;
+    }
     h2 {
         font-size: 20px;
-        padding: 15%;
+        padding: 40px;
     }
 
     .scroll-to-top, nav {
